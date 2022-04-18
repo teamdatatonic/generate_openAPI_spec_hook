@@ -1,5 +1,5 @@
-id: generate_openapi_spec
-name: Generate OpenAPI spec
-description: This hook automatically generates an OpenAPI spec from the main.py file, which is used by API Gateway
-entry: hooks/gen_spec.sh
-language: script
+- id: generate_openapi_spec
+  name: Generate OpenAPI spec
+  description: This hook automatically generates an OpenAPI spec from the main.py file, which is used by API Gateway
+  entry: hooks/gen_spec.sh
+  language: script
