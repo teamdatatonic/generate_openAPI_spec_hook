@@ -5,7 +5,7 @@
 # Requires api-spec-converter: `npm install -g api-spec-converter)`
 
 SRC_PATTERN="*.py"
-if git d iff --cached --name-only | grep --quiet "$SRC_PATTERN"
+if git diff --cached --name-only | grep --quiet "$SRC_PATTERN"
 then
     exit 0
 fi
