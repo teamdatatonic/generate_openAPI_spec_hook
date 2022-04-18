@@ -16,5 +16,3 @@ api-spec-converter \
     --syntax=yaml \
     spec.json \
     > deploy/service/spec.yaml \
-&& 
-rm spec.json
