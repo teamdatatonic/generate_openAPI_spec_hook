@@ -8,13 +8,13 @@ set -euo pipefail
 
 poetry run python -c \
     "from main import app; print(app.openapi())" \
-    > spec.json
-
+    > spec.json \
+&&
 api-spec-converter \
     --from=openapi_3 \
     --to=swagger_2 \
     --syntax=yaml \
     spec.json \
-    > deploy/service/spec.yaml
-
+    > deploy/service/spec.yaml \
+&& 
 rm spec.json
